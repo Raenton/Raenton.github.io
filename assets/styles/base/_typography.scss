@@ -1,0 +1,51 @@
+h1, h2, h3, h4, h5 {
+  font-family: $font-primary;
+  color: $font-primary-color;
+  font-weight: $font-weight-bold;
+  margin: 0;
+}
+
+p, small, ul {
+  font-family: $font-secondary;
+  color: $font-secondary-color;
+  font-weight: $font-weight-medium;
+  line-height: $text-line-height;
+  word-spacing: $text-word-spacing;
+  margin: 0;
+}
+
+h1 {
+  font-size: $largest-font-size;
+}
+
+h2 {
+  font-size: $larger-font-size;
+}
+
+h3 {
+  font-size: $large-font-size;
+}
+
+h4 {
+  font-size: $medium-font-size;
+}
+
+h5 {
+  font-size: $small-font-size;
+}
+
+p, input, button, ul {
+  font-size: $smaller-font-size;
+}
+
+small {
+  font-size: $smallest-font-size;
+}
+
+input {
+  font-family: $font-secondary;
+}
+
+button {
+  font-family: $font-primary;
+}

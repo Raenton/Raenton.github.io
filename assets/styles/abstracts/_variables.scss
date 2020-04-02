@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap|Open+Sans:400');
+
+// colours
+$color-white: #FFFFFF;
+$color-white-translucent: rgba(255, 255, 255, 0.5);
+$color-black: #000000;
+$color-charleston-green: #2B2C28;
+$color-snow-white: #FFFAFB;
+$color-pale-blue: #7DE2D1;
+
+// font sizes
+$base-font-size: 16px;
+
+$smallest-font-size: 0.8em;
+$smaller-font-size: 1em;
+$small-font-size: 2em;
+$medium-font-size: 2.35em;
+$large-font-size: 2.827em;
+$larger-font-size: 3em;
+$largest-font-size: 3.5em;
+
+// font types
+$font-primary: 'Raleway', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+
+// font weights
+$font-weight-bold: 700;
+$font-weight-medium: 300;
+
+// standard text spacing values
+$text-line-height: 1.4rem;
+$text-word-spacing: 0.2rem;
+
+// h1 ... h5
+$font-primary-color: $color-pale-blue;
+// p, small
+$font-secondary-color: $color-white;
+
+// grid system & breakpoints
+$grid-cols: 12;
+$grid-gutter-margins: 16;
+$grid-container-padding: 26px;
+$grid-breakpoint-sm: 568;
+$grid-breakpoint-md: 768;
+$grid-breakpoint-lg: 1024;
+$grid-breakpoints-map: (
+  '-xs': 0,
+  '-sm': $grid-breakpoint-sm,
+  '-md': $grid-breakpoint-md,
+  '-lg': $grid-breakpoint-lg 
+);

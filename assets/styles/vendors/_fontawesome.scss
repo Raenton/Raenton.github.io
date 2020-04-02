@@ -1,0 +1,6 @@
+// font path will be relative to the file that imports this partial
+$fa-font-path: '../fonts';
+@import './fontawesome/fontawesome';
+@import './fontawesome/solid';
+@import './fontawesome/regular';
+@import './fontawesome/brands';
