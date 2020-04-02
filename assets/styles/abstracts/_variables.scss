@@ -1,40 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap|Open+Sans:400');
-
-// colours
-$color-white: #FFFFFF;
-$color-white-translucent: rgba(255, 255, 255, 0.5);
-$color-black: #000000;
-$color-charleston-green: #2B2C28;
-$color-snow-white: #FFFAFB;
-$color-pale-blue: #7DE2D1;
+@font-face {
+  font-family: 'Roboto Mono';
+  // imported by main so the path is relative to main.scss
+  src: url('../fonts/Roboto_Mono/RobotoMono-Medium.ttf') format('truetype');
+}
 
 // font sizes
 $base-font-size: 16px;
 
-$smallest-font-size: 0.8em;
-$smaller-font-size: 1em;
-$small-font-size: 2em;
-$medium-font-size: 2.35em;
-$large-font-size: 2.827em;
-$larger-font-size: 3em;
-$largest-font-size: 3.5em;
+$heading-1-font-size: 3.998rem;
+$heading-2-font-size: 2.827rem;
+$heading-3-font-size: 1.999rem;
+$paragraph-large-font-size: 1.414rem;
+$paragraph-font-size: 1rem;
 
 // font types
-$font-primary: 'Raleway', sans-serif;
-$font-secondary: 'Open Sans', sans-serif;
-
-// font weights
-$font-weight-bold: 700;
-$font-weight-medium: 300;
-
-// standard text spacing values
-$text-line-height: 1.4rem;
-$text-word-spacing: 0.2rem;
-
-// h1 ... h5
-$font-primary-color: $color-pale-blue;
-// p, small
-$font-secondary-color: $color-white;
+$font-primary: 'Roboto Mono', monospace, sans-serif;
 
 // grid system & breakpoints
 $grid-cols: 12;
