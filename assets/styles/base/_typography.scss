@@ -1,4 +1,4 @@
-.heading-1, .heading-2, .heading-3, .paragraph-large, .paragraph {
+.heading-1, .heading-2, .heading-3, .paragraph-large, .paragraph, .button {
   font-family: $font-primary;
 }
 
@@ -31,6 +31,13 @@
 }
 
 .paragraph {
+  font-size: $paragraph-font-size;
+  line-height: $paragraph-line-height;
+  margin: $paragraph-margin;
+  font-weight: $body-weight;
+}
+
+.button {
   font-size: $paragraph-font-size;
   line-height: $paragraph-line-height;
   margin: $paragraph-margin;
