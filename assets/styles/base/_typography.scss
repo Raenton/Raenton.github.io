@@ -1,25 +1,33 @@
 .heading-1, .heading-2, .heading-3, .paragraph-large, .paragraph {
   font-family: $font-primary;
-  margin: 0;
-  padding: 0;
 }
 
 .heading-1 {
   font-size: $heading-1-font-size;
+  line-height: $heading-1-line-height;
+  margin: $heading-1-margin;
 }
 
 .heading-2 {
   font-size: $heading-2-font-size;
+  line-height: $heading-2-line-height;
+  margin: $heading-2-margin;
 }
 
 .heading-3 {
   font-size: $heading-3-font-size;
+  line-height: $heading-3-line-height;
+  margin: $heading-3-margin;
 }
 
 .paragraph-large {
   font-size: $paragraph-large-font-size;
+  line-height: $paragraph-large-line-height;
+  margin: $paragraph-large-margin;
 }
 
 .paragraph {
   font-size: $paragraph-font-size;
+  line-height: $paragraph-line-height;
+  margin: $paragraph-margin;
 }
