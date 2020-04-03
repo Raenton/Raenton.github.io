@@ -1,6 +1,7 @@
 .container {
   max-width: $grid-breakpoint-lg * 1px;
   padding: $grid-container-padding;
+  overflow: auto;
   margin: 0 auto;
 
   &--fluid {
