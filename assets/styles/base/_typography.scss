@@ -6,28 +6,33 @@
   font-size: $heading-1-font-size;
   line-height: $heading-1-line-height;
   margin: $heading-1-margin;
+  font-weight: $heading-weight;
 }
 
 .heading-2 {
   font-size: $heading-2-font-size;
   line-height: $heading-2-line-height;
   margin: $heading-2-margin;
+  font-weight: $heading-weight;
 }
 
 .heading-3 {
   font-size: $heading-3-font-size;
   line-height: $heading-3-line-height;
   margin: $heading-3-margin;
+  font-weight: $heading-weight;
 }
 
 .paragraph-large {
   font-size: $paragraph-large-font-size;
   line-height: $paragraph-large-line-height;
   margin: $paragraph-large-margin;
+  font-weight: $body-weight;
 }
 
 .paragraph {
   font-size: $paragraph-font-size;
   line-height: $paragraph-line-height;
   margin: $paragraph-margin;
+  font-weight: $body-weight;
 }
