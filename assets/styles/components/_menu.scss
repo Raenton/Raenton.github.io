@@ -1,0 +1,23 @@
+.menu-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  background-color: #fbfcfc;
+  padding: 8px 16px;
+  color: #242a42;
+}
+
+.menu-logo {
+  width: 42px;
+  height: 42px;
+}
+
+.menu-icons {
+  display: inline;
+  margin-left: auto;
+
+  i {
+    margin-left: 12px;
+  }
+}
