@@ -1,7 +1,12 @@
 @font-face {
   font-family: 'Roboto Mono';
   // imported by main so the path is relative to main.scss
-  src: url('../fonts/Roboto_Mono/RobotoMono-Medium.ttf') format('truetype');
+  src: url('../fonts/Roboto_Mono/RobotoMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 // font sizes
