@@ -23,11 +23,11 @@ $font-primary: 'Roboto Mono', monospace, sans-serif;
 
 // grid system & breakpoints
 $grid-cols: 12;
-$grid-gutter-margins: 16;
+$grid-gutter-margins: 18;
 $grid-container-padding: 26px;
 $grid-breakpoint-sm: 568;
 $grid-breakpoint-md: 768;
-$grid-breakpoint-lg: 1024;
+$grid-breakpoint-lg: 1420;
 $grid-breakpoints-map: (
   '-xs': 0,
   '-sm': $grid-breakpoint-sm,
