@@ -2,4 +2,7 @@
   color: $color-white;
   max-width: 100%;
   text-align: center;
+  height: 100vh;
+  background: url('../images/train-splash.jpg') no-repeat center fixed;
+  background-size: cover;
 }
