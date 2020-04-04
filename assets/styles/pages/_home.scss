@@ -2,4 +2,5 @@
   max-width: 100%;
   text-align: center;
   color: $color-white;
+  height: calc(100vh + #{$menu-height});
 }
