@@ -2,5 +2,13 @@
   max-width: 100%;
   text-align: center;
   color: $color-white;
-  height: calc(100vh + #{$menu-height});
+  height: 100vh;
+  background: url('../images/pink-street-splash.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+
+.section-home .heading-1 {
+  margin: 0;
+  top: 40%;
+  position: relative;
 }
