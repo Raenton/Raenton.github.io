@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel ./index.html",
-    "build": "parcel build ./index.html",
-    "build-pages": "parcel build ./index.html -d docs/"
+    "build": "parcel build ./index.html"
   },
   "author": "Robin L Denton",
   "license": "ISC",
