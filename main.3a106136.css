@@ -6291,42 +6291,42 @@ main {
 .heading-1 {
   font-size: 3.157em;
   line-height: 2;
-  margin: 9.471em 0 3.157em;
+  margin: 3.157em 0 3.157em;
   font-weight: 400;
 }
 
 .heading-2 {
   font-size: 2.369em;
   line-height: 2;
-  margin: 7.107em 0 2.369em;
+  margin: 2.369em 0 2.369em;
   font-weight: 400;
 }
 
 .heading-3 {
   font-size: 1.777em;
   line-height: 2;
-  margin: 5.331em 0 1.777em;
+  margin: 1.777em 0 1.777em;
   font-weight: 400;
 }
 
 .paragraph-large {
   font-size: 1.333em;
   line-height: 2;
-  margin: 3.999em 0 1.333em;
+  margin: 1.333em 0 1.333em;
   font-weight: 300;
 }
 
 .paragraph {
   font-size: 1em;
   line-height: 2;
-  margin: 3em 0 1em;
+  margin: 1em 0 1em;
   font-weight: 300;
 }
 
 .button {
   font-size: 1em;
   line-height: 2;
-  margin: 3em 0 1em;
+  margin: 1em 0 1em;
   font-weight: 300;
 }
 
@@ -6632,7 +6632,7 @@ main {
   color: inherit;
   text-decoration: none;
   margin-left: 32px;
-  transition: color 0.4s;
+  transition: color 0.4s ease-in-out;
 }
 .menu-icons a i {
   z-index: 1;
@@ -6641,20 +6641,19 @@ main {
   height: 100%;
 }
 .menu-icons a::after {
+  content: "";
   position: absolute;
-  width: 35px;
-  height: 35px;
-  top: -5px;
-  left: -5px;
+  width: 75px;
+  height: 75px;
   z-index: 0;
   border-radius: 50%;
+  transition: background-color 0.4s ease-in-out;
 }
 .menu-icons a:hover {
   color: #FBFCFC;
 }
 .menu-icons a:hover::after {
-  content: "";
-  background: #5778FF;
+  background-color: #5778FF;
 }
 
 @media screen and (min-width: 1420px) {
@@ -6750,7 +6749,7 @@ main {
   color: #FBFCFC;
   max-width: 100%;
   text-align: center;
-  height: 100%;
+  min-height: 100%;
   background: url("/train-splash.94eb29f4.jpg") no-repeat center fixed;
   background-size: cover;
 }
