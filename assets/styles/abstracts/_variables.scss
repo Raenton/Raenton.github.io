@@ -50,23 +50,30 @@ $color-icky-blue: #5778FF;
 $grid-cols: 12;
 $grid-gutter-margins: 18;
 $grid-container-padding: 0 26px;
+
 $grid-breakpoint-sm: 568;
 $grid-breakpoint-md: 768;
-$grid-breakpoint-lg: 1420;
+$grid-breakpoint-lg: 1024;
+$grid-breakpoint-xl: 1420;
 $grid-breakpoints-map: (
   '-xs': 0,
   '-sm': $grid-breakpoint-sm,
   '-md': $grid-breakpoint-md,
-  '-lg': $grid-breakpoint-lg 
+  '-lg': $grid-breakpoint-lg,
+  '-xl': $grid-breakpoint-xl
 );
 
 //layout
 
 // _menu.scss
+//xs
 $menu-width-xs: 100%;
 $menu-height-xs: 120px;
-$menu-width-md: 56px;
-$menu-height-md: 100%;
+//md
+$menu-height-md: 80px;
+//lg
+$menu-width-lg: 56px;
+$menu-height-lg: 100%;
 
 // _footer.scss
 $footer-height-xs: 80px;
