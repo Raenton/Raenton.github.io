@@ -6274,13 +6274,18 @@ body {
 }
 
 main {
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   height: 100%;
 }
 
+@media screen and (min-width: 568px) {
+  main {
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 768px) {
   main {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -6711,7 +6716,7 @@ main {
 }
 
 .menu-icons {
-  font-size: 3em;
+  font-size: 2em;
   height: 100%;
   display: flex;
   align-items: center;
