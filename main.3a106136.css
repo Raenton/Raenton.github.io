@@ -6274,20 +6274,13 @@ body {
 }
 
 main {
-  font-size: 1.5rem;
+  font-size: 1rem;
   height: 100%;
 }
 
 @media screen and (min-width: 568px) {
   main {
-    font-size: 1.25rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  main {
     font-size: 1rem;
-    width: calc(100% - 56px);
-    margin-left: auto;
   }
 }
 .heading-1, .heading-2, .heading-3, .paragraph-large, .paragraph, .button {
@@ -6337,6 +6330,7 @@ main {
 }
 
 .container {
+  min-height: 100%;
   max-width: 1420px;
   padding: 0 26px;
   overflow: auto;
@@ -6687,25 +6681,6 @@ main {
   background-color: #5778FF;
 }
 
-@media screen and (min-width: 1420px) {
-  .menu-bar {
-    height: 100%;
-    width: 56px;
-    flex-direction: column;
-    padding: 16px 8px;
-  }
-
-  .menu-icons {
-    height: unset;
-    width: 100%;
-    margin: auto 0 8px 0;
-    flex-direction: column;
-  }
-  .menu-icons a {
-    margin-left: 0;
-    margin-top: 20px;
-  }
-}
 .project {
   display: flex;
   flex-direction: column;
