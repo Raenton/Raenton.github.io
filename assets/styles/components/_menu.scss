@@ -62,7 +62,7 @@
   }
 }
 
-@include create-media-query($grid-breakpoint-md) {
+@include create-media-query($grid-breakpoint-lg) {
   .menu-bar {
     height: $menu-height-md;
     width: $menu-width-md;

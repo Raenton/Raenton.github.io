@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: $base-font-size;
+  height: 100%;
 }
 
 *,
@@ -15,19 +16,19 @@ html {
 
 body {
   background: $color-black;
+  height: 100%;
 }
 
 #content {
   display: flex;
-  height: 100vh;
-  transition: height 1000s steps(1);
+  height: 100%;
 }
 
 main {
   height: 100%;
 }
 
-@include create-media-query($grid-breakpoint-md) {
+@include create-media-query($grid-breakpoint-lg) {
   main {
     width: calc(100% - #{$menu-width-md});
     margin-left: auto;
