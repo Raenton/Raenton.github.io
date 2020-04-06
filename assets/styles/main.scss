@@ -14,14 +14,12 @@
 
 // 4. Layout
 @import 'layout/grid';
+@import 'layout/section';
 
 // 5. Components
 @import 'components/menu';
 @import 'components/project';
 @import 'components/button';
+@import 'components/footer';
 
 // 6. Page specific styles
-@import 'pages/home';
-@import 'pages/about';
-@import 'pages/projects';
-@import 'pages/contact';

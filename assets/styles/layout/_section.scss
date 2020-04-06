@@ -1,0 +1,27 @@
+.section {
+  text-align: center;
+  color: $color-white;
+  min-height: 100%;
+}
+
+.section-home {
+  background: url('../images/house-splash.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+
+.section-skills {
+  .computer-image {
+    max-width: 100%;
+  }
+}
+
+.section-projects {
+  text-align: left;
+  color: $color-black;
+  padding-top: 120px;
+}
+
+.section-contact {
+  background: url('../images/train-splash.jpg') no-repeat center fixed;
+  background-size: cover;
+}
