@@ -6332,7 +6332,6 @@ main {
 
 .container {
   max-width: 1420px;
-  height: 100%;
   padding: 0 26px;
   overflow: auto;
   margin: 0 auto;
@@ -6595,6 +6594,32 @@ main {
     margin: 0 9px;
   }
 }
+.section {
+  text-align: center;
+  color: #FBFCFC;
+  min-height: 100%;
+}
+
+.section-home {
+  background: url("/house-splash.1cc6e10a.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+.section-skills .computer-image {
+  max-width: 100%;
+}
+
+.section-projects {
+  text-align: left;
+  color: #242A42;
+  padding-top: 120px;
+}
+
+.section-contact {
+  background: url("/train-splash.94eb29f4.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
 .menu-bar {
   display: flex;
   align-items: center;
@@ -6679,25 +6704,24 @@ main {
   display: flex;
   flex-direction: column;
   color: #242A42;
-  border-radius: 30px;
-  box-shadow: 4px 2px 10px 0 #FBFCFC;
-  border: solid 2px #d0d3d4;
+  border: solid 3px #FF1493;
   background-color: #FBFCFC;
   padding: 0 20px;
   margin-bottom: 60px;
 }
 
-.project img {
-  margin: 48px 0;
-  max-height: 100px;
+.project .paragraph {
+  margin-top: 0;
 }
 
 .project .heading-3 {
   margin: 0;
 }
 
-.project .paragraph, .paragraph-large {
-  margin-top: 0;
+.project .project-button {
+  width: 100%;
+  color: #242A42;
+  border: solid 2px #FF1493;
 }
 
 .button {
@@ -6714,44 +6738,11 @@ main {
   background: rgba(251, 252, 252, 0.3);
 }
 
-.section-home {
-  max-width: 100%;
-  text-align: center;
-  color: #FBFCFC;
-  height: 100%;
-  background: url("/house-splash.1cc6e10a.jpg") no-repeat center fixed;
-  background-size: cover;
-}
-
-.section-home .heading-1 {
-  margin: 0;
-  top: 34%;
-  position: relative;
-}
-
-.section-about {
-  max-width: 100%;
-  text-align: center;
-  color: #FBFCFC;
-}
-
-.computer-image {
-  max-width: 100%;
-}
-
-.section-project {
-  max-width: 100%;
-  text-align: left;
-  color: #242A42;
-}
-
-.section-contact {
-  color: #FBFCFC;
-  max-width: 100%;
-  text-align: center;
-  height: 100%;
-  background: url("/train-splash.94eb29f4.jpg") no-repeat center fixed;
-  background-size: cover;
+.footer {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: #FBFCFC;
 }
 
 /*# sourceMappingURL=/main.3a106136.css.map */
