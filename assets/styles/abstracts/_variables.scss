@@ -19,11 +19,11 @@ $paragraph-large-font-size: 1.333em;
 $paragraph-font-size: 1em;
 
 // margins are multipliers of font-sizes
-$heading-1-margin: ($heading-1-font-size * 3) 0 ($heading-1-font-size * 1);
-$heading-2-margin: ($heading-2-font-size * 3) 0 ($heading-2-font-size * 1);
-$heading-3-margin: ($heading-3-font-size * 3) 0 ($heading-3-font-size * 1);
-$paragraph-large-margin: ($paragraph-large-font-size * 3) 0 ($paragraph-large-font-size * 1);
-$paragraph-margin: ($paragraph-font-size * 3) 0 ($paragraph-font-size * 1);
+$heading-1-margin: $heading-1-font-size 0 $heading-1-font-size;
+$heading-2-margin: $heading-2-font-size 0 $heading-2-font-size;
+$heading-3-margin: $heading-3-font-size 0 $heading-3-font-size;
+$paragraph-large-margin: $paragraph-large-font-size 0 $paragraph-large-font-size;
+$paragraph-margin: $paragraph-font-size 0 $paragraph-font-size;
 
 // line heights are multipliers of font-sizes
 $heading-1-line-height: 2;
