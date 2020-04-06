@@ -6250,6 +6250,7 @@ readers do not read off random characters that represent icons */
 html {
   box-sizing: border-box;
   font-size: 100%;
+  height: 100%;
 }
 
 *,
@@ -6264,15 +6265,16 @@ html {
 
 body {
   background: #242A42;
+  height: 100%;
 }
 
 #content {
   display: flex;
-  height: 100vh;
-  transition: height 1000s steps(1);
+  height: 100%;
 }
 
 main {
+  font-size: 2rem;
   height: 100%;
 }
 
@@ -6287,44 +6289,44 @@ main {
 }
 
 .heading-1 {
-  font-size: 3.157rem;
-  line-height: 6.314rem;
-  margin: 9.471rem 0 3.157rem;
+  font-size: 3.157em;
+  line-height: 2;
+  margin: 9.471em 0 3.157em;
   font-weight: 400;
 }
 
 .heading-2 {
-  font-size: 2.369rem;
-  line-height: 4.738rem;
-  margin: 7.107rem 0 2.369rem;
+  font-size: 2.369em;
+  line-height: 2;
+  margin: 7.107em 0 2.369em;
   font-weight: 400;
 }
 
 .heading-3 {
-  font-size: 1.777rem;
-  line-height: 3.554rem;
-  margin: 5.331rem 0 1.777rem;
+  font-size: 1.777em;
+  line-height: 2;
+  margin: 5.331em 0 1.777em;
   font-weight: 400;
 }
 
 .paragraph-large {
-  font-size: 1.333rem;
-  line-height: 2.666rem;
-  margin: 3.999rem 0 1.333rem;
+  font-size: 1.333em;
+  line-height: 2;
+  margin: 3.999em 0 1.333em;
   font-weight: 300;
 }
 
 .paragraph {
-  font-size: 1rem;
-  line-height: 2rem;
-  margin: 3rem 0 1rem;
+  font-size: 1em;
+  line-height: 2;
+  margin: 3em 0 1em;
   font-weight: 300;
 }
 
 .button {
-  font-size: 1rem;
-  line-height: 2rem;
-  margin: 3rem 0 1rem;
+  font-size: 1em;
+  line-height: 2;
+  margin: 3em 0 1em;
   font-weight: 300;
 }
 
@@ -6597,21 +6599,25 @@ main {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 56px;
+  height: 120px;
   background-color: #FBFCFC;
-  padding: 8px 16px;
+  padding: 16px;
   color: #242A42;
   position: fixed;
   top: 0;
   border-bottom: solid 1px #d0d3d4;
 }
 
+.menu-logo-link {
+  height: 100%;
+}
+
 .menu-logo {
-  width: 42px;
-  height: 42px;
+  max-height: 100%;
 }
 
 .menu-icons {
+  font-size: 3em;
   height: 100%;
   display: flex;
   align-items: center;
@@ -6621,13 +6627,11 @@ main {
 .menu-icons a {
   display: flex;
   position: relative;
-  width: 25px;
-  height: 25px;
   justify-content: center;
   align-items: center;
   color: inherit;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 32px;
   transition: color 0.4s;
 }
 .menu-icons a i {
@@ -6722,7 +6726,7 @@ main {
 
 .section-home .heading-1 {
   margin: 0;
-  top: 40%;
+  top: 34%;
   position: relative;
 }
 
