@@ -12,11 +12,11 @@
 // font sizes
 $base-font-size: 100%;
 
-$heading-1-font-size: 3.157rem;
-$heading-2-font-size: 2.369rem;
-$heading-3-font-size: 1.777rem;
-$paragraph-large-font-size: 1.333rem;
-$paragraph-font-size: 1rem;
+$heading-1-font-size: 3.157em;
+$heading-2-font-size: 2.369em;
+$heading-3-font-size: 1.777em;
+$paragraph-large-font-size: 1.333em;
+$paragraph-font-size: 1em;
 
 // margins are multipliers of font-sizes
 $heading-1-margin: ($heading-1-font-size * 3) 0 ($heading-1-font-size * 1);
@@ -26,11 +26,11 @@ $paragraph-large-margin: ($paragraph-large-font-size * 3) 0 ($paragraph-large-fo
 $paragraph-margin: ($paragraph-font-size * 3) 0 ($paragraph-font-size * 1);
 
 // line heights are multipliers of font-sizes
-$heading-1-line-height: ($heading-1-font-size * 2);
-$heading-2-line-height: ($heading-2-font-size * 2);
-$heading-3-line-height: ($heading-3-font-size * 2);
-$paragraph-large-line-height: ($paragraph-large-font-size * 2);
-$paragraph-line-height: ($paragraph-font-size * 2);
+$heading-1-line-height: 2;
+$heading-2-line-height: 2;
+$heading-3-line-height: 2;
+$paragraph-large-line-height: 2;
+$paragraph-line-height: 2;
 
 // font types
 $font-primary: 'Roboto Mono', monospace, sans-serif;
