@@ -60,5 +60,10 @@ $grid-breakpoints-map: (
   '-lg': $grid-breakpoint-lg 
 );
 
-// layout
-$menu-height: 56px;
+//layout
+
+// _menu.scss
+$menu-width-xs: 100%;
+$menu-height-xs: 56px;
+$menu-width-md: 56px;
+$menu-height-md: 100%;

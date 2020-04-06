@@ -1,8 +1,8 @@
 .menu-bar {
   display: flex;
   align-items: center;
-  width: 100%;
-  height: $menu-height;
+  width: $menu-width-xs;
+  height: $menu-height-xs;
   background-color: $color-white;
   padding: 8px 16px;
   color: $color-black;
@@ -58,6 +58,27 @@
         content: '';
         background: $color-icky-blue;
       }
+    }
+  }
+}
+
+@include create-media-query($grid-breakpoint-md) {
+  .menu-bar {
+    height: $menu-height-md;
+    width: $menu-width-md;
+    flex-direction: column;
+    padding: 16px 8px;
+  }
+
+  .menu-icons {
+    height: unset;
+    width: 100%;
+    margin: auto 0 8px 0;
+    flex-direction: column;
+
+    a {
+      margin-left: 0;
+      margin-top: 20px;
     }
   }
 }
