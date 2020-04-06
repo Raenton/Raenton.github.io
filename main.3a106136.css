@@ -6276,7 +6276,7 @@ main {
   height: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1420px) {
   main {
     width: calc(100% - 56px);
     margin-left: auto;
@@ -6653,7 +6653,7 @@ main {
   background: #5778FF;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1420px) {
   .menu-bar {
     height: 100%;
     width: 56px;
