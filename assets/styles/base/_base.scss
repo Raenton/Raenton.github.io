@@ -25,13 +25,19 @@ body {
 }
 
 main {
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   height: 100%;
+}
+
+@include create-media-query($grid-breakpoint-sm) {
+  main {
+    font-size: 0.8rem;
+  }
 }
 
 @include create-media-query($grid-breakpoint-md) {
   main {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 
