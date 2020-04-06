@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["window","onresize","document","body","height","innerHeight"],"mappings":";AAAAA,OAAOC,SAAW,WAChBC,SAASC,KAAKC,OAASJ,OAAOK,aAEhCL,OAAOC","file":"robindenton.183ef6a0.js","sourceRoot":"..","sourcesContent":["window.onresize = function() {\n  document.body.height = window.innerHeight;\n}\nwindow.onresize();"]}
