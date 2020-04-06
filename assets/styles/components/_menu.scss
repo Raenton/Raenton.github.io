@@ -4,19 +4,23 @@
   width: $menu-width-xs;
   height: $menu-height-xs;
   background-color: $color-white;
-  padding: 8px 16px;
+  padding: 16px;
   color: $color-black;
   position: fixed;
   top: 0;
   border-bottom: solid 1px $color-grey;
 }
 
+.menu-logo-link {
+  height: 100%;
+}
+
 .menu-logo {
-  width: 42px;
-  height: 42px;
+  max-height: 100%;
 }
 
 .menu-icons {
+  font-size: 3em;
   height: 100%;
   display: flex;
   align-items: center;
@@ -26,13 +30,11 @@
   a {
     display: flex;
     position: relative;
-    width: 25px;
-    height: 25px;
     justify-content: center;
     align-items: center;
     color: inherit;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 32px;
     transition: color 0.4s;
 
     i {
