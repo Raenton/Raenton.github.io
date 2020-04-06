@@ -6749,7 +6749,7 @@ main {
   color: #FBFCFC;
   max-width: 100%;
   text-align: center;
-  min-height: 100%;
+  height: 100%;
   background: url("/train-splash.94eb29f4.jpg") no-repeat center fixed;
   background-size: cover;
 }
