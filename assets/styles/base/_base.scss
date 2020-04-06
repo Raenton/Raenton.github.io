@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: $base-font-size;
+  height: 100%;
 }
 
 *,
@@ -15,4 +16,5 @@ html {
 
 body {
   background: $color-black;
+  height: 100%;
 }
