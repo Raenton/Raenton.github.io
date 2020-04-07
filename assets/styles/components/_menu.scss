@@ -65,16 +65,6 @@
   }
 }
 
-@include create-media-query($grid-breakpoint-md) {
-  .menu-bar {
-    height: $menu-height-md;
-  }
-
-  .menu-icons {
-    font-size: 2em;
-  }
-}
-
 @include create-media-query($grid-breakpoint-lg) {
   .menu-bar {
     height: $menu-height-lg;
@@ -83,15 +73,21 @@
     padding: 16px 8px;
   }
 
+  .menu-logo-link {
+    height: unset;
+  }
+
   .menu-icons {
+    position: relative;
+    top: 25%;
     height: unset;
     width: 100%;
-    margin: auto 0 8px 0;
+    margin: 8px 0;
     flex-direction: column;
 
     a {
       margin-left: 0;
-      margin-top: 20px;
+      margin-top: 28px;
     }
   }
 }
