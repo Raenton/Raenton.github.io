@@ -6712,6 +6712,30 @@ main {
     padding: 0 0 0 12%;
   }
 }
+@keyframes menu-slide-in {
+  0% {
+    content: "";
+    width: 50px;
+  }
+  100% {
+    content: attr(data-name);
+    width: auto;
+    padding-left: 85px;
+    padding-right: 16px;
+  }
+}
+@keyframes menu-slide-out {
+  0% {
+    content: "";
+    width: 165px;
+    padding-left: 85px;
+    padding-right: 16px;
+  }
+  100% {
+    content: "";
+    width: 50px;
+  }
+}
 .menu-bar {
   display: flex;
   align-items: center;
@@ -6760,19 +6784,36 @@ main {
   height: 100%;
 }
 .menu-icons a::after {
-  content: "";
   position: absolute;
+  font-family: "Roboto Mono", monospace, sans-serif;
   width: 50px;
   height: 50px;
   z-index: 0;
-  border-radius: 50%;
+  left: -12px;
+  border-radius: 15px;
   transition: background-color 0.4s ease-in-out;
+  content: "";
 }
 .menu-icons a:hover {
   color: #FBFCFC;
 }
 .menu-icons a:hover::after {
   background-color: #5778FF;
+  line-height: 50px;
+}
+
+.menu-slide {
+  position: absolute;
+  color: #FBFCFC;
+  font-family: "Roboto Mono", monospace, sans-serif;
+  background: #5778FF;
+  left: 12px;
+  height: 50px;
+  font-size: 1.5rem;
+  line-height: 48px;
+  padding-left: 40px;
+  padding-right: 16px;
+  border-radius: 0 24px 24px 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -6797,6 +6838,12 @@ main {
   }
   .menu-icons a {
     margin-left: 0;
+  }
+  .menu-icons a.mouseIn::after {
+    animation: menu-slide-in 0.5s forwards;
+  }
+  .menu-icons a.mouseOut::after {
+    animation: menu-slide-out 0.5s forwards;
   }
   .menu-icons a + a {
     margin-top: 28px;
