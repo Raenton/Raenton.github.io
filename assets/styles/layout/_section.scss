@@ -1,7 +1,8 @@
 .section {
+  display: flex;
+  min-height: 100%;
   text-align: center;
   color: $color-white;
-  min-height: 100%;
 }
 
 .section-home {
