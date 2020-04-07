@@ -24,3 +24,11 @@
 @each $modifier, $breakpoint in $grid-breakpoints-map {
   @include create-col-classes($modifier, $grid-cols, $breakpoint);
 }
+
+@include create-media-query($grid-breakpoint-lg) {
+  // adjust the grid for left alignment in desktop view
+  .container {
+    margin: 0;
+    padding: 0 26px 0 12%;
+  } 
+}

@@ -1,4 +1,6 @@
 .article {
   position: relative;
+  // overflow ensures the article will increase its height
+  // to fit margins if necessary
   overflow: auto;
 }

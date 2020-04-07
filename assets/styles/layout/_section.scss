@@ -53,10 +53,5 @@
 @include create-media-query($grid-breakpoint-lg) {
   .section {
     text-align: left;
-
-    .container {
-      margin: 0;
-      padding: 0 26px 0 12%;
-    }
   } 
 }
