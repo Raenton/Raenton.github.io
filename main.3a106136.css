@@ -6343,6 +6343,7 @@ main {
 }
 
 .container {
+  width: 100%;
   max-width: 1024px;
   padding: 0 26px;
   overflow: auto;
@@ -6678,8 +6679,15 @@ main {
   background: url("/house-splash.1cc6e10a.jpg") no-repeat center fixed;
   background-size: cover;
 }
+.section-home .heading-1 {
+  margin: 0;
+  position: relative;
+  left: 0;
+  top: 30%;
+}
 
 .section-skills .computer-image {
+  margin-bottom: 40px;
   max-width: 100%;
 }
 
@@ -6687,6 +6695,7 @@ main {
   text-align: left;
   color: #242A42;
   padding-top: 120px;
+  padding-bottom: 40px;
 }
 
 .section-contact {
@@ -6789,7 +6798,7 @@ main {
   border: solid 3px #FF1493;
   background-color: #FBFCFC;
   padding: 0 20px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .project .paragraph {
