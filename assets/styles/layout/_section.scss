@@ -17,10 +17,18 @@
   }
 }
 
+.section-about {
+  .article {
+    position: relative;
+    top: 15%;
+    overflow: auto;
+  }
+}
+
 .section-skills {
   .computer-image {
-    margin-bottom: 40px;
-    max-width: 100%;
+    margin: 40px auto;
+    max-width: 50%;
   }
 }
 
