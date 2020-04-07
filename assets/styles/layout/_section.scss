@@ -26,6 +26,12 @@
 }
 
 .section-skills {
+  .article {
+    position: relative;
+    top: 15%;
+    overflow: auto;
+  }
+
   .computer-image {
     margin: 40px auto;
     max-width: 50%;
