@@ -6344,7 +6344,7 @@ main {
 
 .container {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1420px;
   padding: 0 26px;
   overflow: auto;
   margin: 0 auto;
@@ -6668,6 +6668,11 @@ main {
     margin: 0 9px;
   }
 }
+.article {
+  position: relative;
+  overflow: auto;
+}
+
 .section {
   display: flex;
   min-height: 100%;
@@ -6683,12 +6688,19 @@ main {
   margin: 0;
   position: relative;
   left: 0;
-  top: 30%;
+  top: 34%;
 }
 
+.section-about .article {
+  top: 15%;
+}
+
+.section-skills .article {
+  top: 15%;
+}
 .section-skills .computer-image {
-  margin-bottom: 40px;
-  max-width: 100%;
+  margin: 40px auto;
+  max-width: 50%;
 }
 
 .section-projects {
@@ -6702,6 +6714,9 @@ main {
   background: url("/train-splash.94eb29f4.jpg") no-repeat center fixed;
   background-size: cover;
 }
+.section-contact .article {
+  top: 15%;
+}
 
 @media screen and (min-width: 1024px) {
   .section {
@@ -6709,7 +6724,7 @@ main {
   }
   .section .container {
     margin: 0;
-    padding: 0 0 0 12%;
+    padding: 0 26px 0 12%;
   }
 }
 @keyframes menu-slide-in {
@@ -6727,7 +6742,7 @@ main {
 @keyframes menu-slide-out {
   0% {
     content: "";
-    width: 165px;
+    width: auto;
     padding-left: 85px;
     padding-right: 16px;
   }
