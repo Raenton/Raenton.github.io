@@ -6703,6 +6703,15 @@ main {
   background-size: cover;
 }
 
+@media screen and (min-width: 1024px) {
+  .section {
+    text-align: left;
+  }
+  .section .container {
+    margin: 0;
+    padding: 0 0 0 12%;
+  }
+}
 .menu-bar {
   display: flex;
   align-items: center;
@@ -6788,6 +6797,8 @@ main {
   }
   .menu-icons a {
     margin-left: 0;
+  }
+  .menu-icons a + a {
     margin-top: 28px;
   }
 }
