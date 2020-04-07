@@ -6276,6 +6276,7 @@ body {
 main {
   font-size: 0.8rem;
   height: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 568px) {
@@ -6342,7 +6343,6 @@ main {
 }
 
 .container {
-  min-height: 100%;
   max-width: 1024px;
   padding: 0 26px;
   overflow: auto;
@@ -6668,9 +6668,10 @@ main {
   }
 }
 .section {
+  display: flex;
+  min-height: 100%;
   text-align: center;
   color: #FBFCFC;
-  min-height: 100%;
 }
 
 .section-home {
@@ -6704,6 +6705,7 @@ main {
   position: fixed;
   top: 0;
   border-bottom: solid 1px #d0d3d4;
+  z-index: 10;
 }
 
 .menu-logo-link {
@@ -6742,8 +6744,8 @@ main {
 .menu-icons a::after {
   content: "";
   position: absolute;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   z-index: 0;
   border-radius: 50%;
   transition: background-color 0.4s ease-in-out;
@@ -6773,7 +6775,6 @@ main {
   }
 
   .menu-icons {
-    font-size: 1.5em;
     height: unset;
     width: 100%;
     margin: auto 0 8px 0;
