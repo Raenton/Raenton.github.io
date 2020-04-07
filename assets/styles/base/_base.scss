@@ -27,6 +27,7 @@ body {
 main {
   font-size: 0.8rem;
   height: 100%;
+  width: 100%;
 }
 
 @include create-media-query($grid-breakpoint-sm) {
