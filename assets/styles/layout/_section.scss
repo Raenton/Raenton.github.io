@@ -19,17 +19,13 @@
 
 .section-about {
   .article {
-    position: relative;
     top: 15%;
-    overflow: auto;
   }
 }
 
 .section-skills {
   .article {
-    position: relative;
     top: 15%;
-    overflow: auto;
   }
 
   .computer-image {
@@ -48,6 +44,10 @@
 .section-contact {
   background: url('../images/train-splash.jpg') no-repeat center fixed;
   background-size: cover;
+
+  .article {
+    top: 15%;
+  }
 }
 
 @include create-media-query($grid-breakpoint-lg) {
