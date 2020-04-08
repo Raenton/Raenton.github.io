@@ -1,10 +1,11 @@
 .button {
+  padding: 16px 8px;
+  max-width: 100%;
+  min-width: 200px;
   border-radius: 15px;
-  border: solid 4px $color-white;
-  color: $color-white;
+  border: solid 4px #FBFCFC;
+  color: #FBFCFC;
   background: transparent;
-  padding: 26px 8px;
-  width: 300px;
   transition: background 0.3s ease-in-out;
 }
 
