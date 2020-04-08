@@ -1,0 +1,22 @@
+@keyframes slide-in-left {
+  0% {
+    left: -50%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slide-in-left 1s forwards;
+}
+
+[data-scroll-animation="slide-in-left"] {
+  position: relative;
+  opacity: 0;
+}
