@@ -6716,16 +6716,9 @@ main {
   margin: 0;
   position: relative;
   left: 0;
-  top: 34%;
+  top: 30%;
 }
 
-.section-about .article {
-  top: 15%;
-}
-
-.section-skills .article {
-  top: 15%;
-}
 .section-skills .computer-image {
   margin: 40px auto;
   max-width: 50%;
@@ -6741,9 +6734,6 @@ main {
 .section-contact {
   background: url("/train-splash.94eb29f4.jpg") no-repeat center fixed;
   background-size: cover;
-}
-.section-contact .article {
-  top: 15%;
 }
 
 @media screen and (min-width: 1024px) {
