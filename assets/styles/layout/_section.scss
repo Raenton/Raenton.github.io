@@ -13,21 +13,11 @@
     margin: 0;
     position: relative;
     left: 0;
-    top: 34%;
-  }
-}
-
-.section-about {
-  .article {
-    top: 15%;
+    top: 30%;
   }
 }
 
 .section-skills {
-  .article {
-    top: 15%;
-  }
-
   .computer-image {
     margin: 40px auto;
     max-width: 50%;
@@ -44,10 +34,6 @@
 .section-contact {
   background: url('../images/train-splash.jpg') no-repeat center fixed;
   background-size: cover;
-
-  .article {
-    top: 15%;
-  }
 }
 
 @include create-media-query($grid-breakpoint-lg) {
