@@ -119,45 +119,55 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"index.js":[function(require,module,exports) {
 (function () {
-  function setupAnimationListeners() {
+  var scrollElements = [];
+
+  function setupMenu() {
     // menu animations
     var menuIcons = document.getElementById('menu-icons');
-    Array.from(menuIcons.children).forEach(function (node) {
-      node.addEventListener('mouseover', function () {
-        node.classList.add('mouseIn');
-        node.classList.remove('mouseOut');
+    Array.from(menuIcons.children).forEach(function (child) {
+      child.addEventListener('mouseover', function () {
+        child.classList.add('mouseIn');
+        child.classList.remove('mouseOut');
       });
-      node.addEventListener('mouseout', function () {
-        node.classList.add('mouseOut');
-        node.classList.remove('mouseIn');
+      child.addEventListener('mouseout', function () {
+        child.classList.add('mouseOut');
+        child.classList.remove('mouseIn');
+      });
+      child.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.getElementById(child.dataset.scroll).scrollIntoView({
+          behavior: 'smooth'
+        });
       });
     });
   }
 
-  function scrollTo(id) {
-    var section = document.getElementById(id);
+  function isInViewport(elem) {
+    var bounding = elem.getBoundingClientRect();
+    return bounding.top >= 0 && bounding.left >= 0 && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) && bounding.right <= (window.innerWidth || document.documentElement.clientWidth);
+  }
 
-    if (!section) {
-      console.error('Could not scroll to section: "' + id + '"');
-    }
+  function doScrollAnimations() {
+    scrollElements.forEach(function (el) {
+      if (isInViewport(el)) {
+        var animation = el.dataset.scrollAnimation;
 
-    var rect = section.getBoundingClientRect();
-    console.log('scrolling to: ', id, section, rect);
-    window.scrollTo(0, rect.top);
+        if (!el.classList.contains(animation)) {
+          el.classList.add(animation);
+        }
+      }
+    });
   }
 
   function setupScroll() {
-    var menuIcons = document.getElementById('menu-icons');
-    Array.from(menuIcons.children).forEach(function (child) {
-      child.addEventListener('click', function (e) {
-        e.preventDefault();
-        scrollTo(child.dataset.scroll);
-      });
-    });
+    scrollElements = document.querySelectorAll('[data-scroll-animation]'); // do the animations on load
+
+    doScrollAnimations();
+    document.addEventListener('scroll', doScrollAnimations);
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    setupAnimationListeners();
+    setupMenu();
     setupScroll();
   });
 })();
@@ -189,7 +199,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52500" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56359" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
